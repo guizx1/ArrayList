@@ -1,0 +1,14 @@
+package exemploArray;
+
+import java.util.ArrayList;
+
+public class ExemploArrayListA {
+	public static void main ( String[] args ) {
+		ArrayList <Double> numero = new ArrayList <Double>();
+		numero.add(12.0);
+		numero.add(17.0);
+		numero.add(9.0);
+		
+		System.out.println (numero);
+	}
+}
