@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+
+public class Main {
+	public static void main(String[] args){
+		ArrayList<String> produto = new ArrayList <String>();
+	    produto.add("Feijoada");
+	    produto.add("Bolacha");
+	    produto.add("manteiga");
+
+	    produto.remove("Feijoada");
+	    
+	    ArrayList<Integer> quantidade = new ArrayList <Integer>();
+	    quantidade.add(1);
+	    quantidade.add(5);
+	    quantidade.add(3);
+
+	    quantidade.remove(0);
+	    
+	    ArrayList<Double> preco = new ArrayList <Double>();
+	    preco.add(23.0);
+	    preco.add(3.0);
+	    preco.add(7.0);
+
+	    preco.remove(0);
+
+	    for (int i = 0 ; i < produto.size(); i++) {
+	    	System.out.println( "Produto: " + i + "\n" + "\nNome: " + produto.get(i) + "\nQuantidade: " + quantidade.get(i) + "\nPreço: " + preco.get(i) + "\n_________" );
+	    }
+	    
+	    ArrayList <Double> total = new ArrayList <Double>();
+	    for (int i = 0 ; i < produto.size(); i++) {
+	      Double calcularTotal = (preco.get(i) * quantidade.get(i));
+	      total.add (calcularTotal);
+	      System.out.println(total.get(i));
+	    }
+	  }
+	}
